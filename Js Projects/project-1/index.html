@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App Javascript | BotCoder</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- quiz Configurations Container  -->
+    <div class="config-container">
+      <h2 class="config-title">
+        Quiz Configurations
+      </h2>
+      <div class="config-options">
+        <h4 class="option-title">Select Category</h4>
+        <div class="Category-options">
+          <button class="category-options active">Programming</button>
+          <button class="category-options">Gegraphy</button>
+          <button class="category-options">Mathematics</button>
+          <button class="category-options">Entertainment</button>
+        </div>
+      </div>
+
+      <div class="config-options">
+        <h4 class="option-title">No Of Qustions</h4>
+        <div class="Qustions-option">
+          <button class="Qustions-option">5</button>
+          <button class="Qustions-option active">10</button>
+          <button class="Qustions-option">15</button>
+          <button class="Qustions-option">20</button>
+          <button class="Qustions-option">25</button>
+        </div>
+      </div>
+
+      <button class="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <!-- quiz-container -->
+    <div class="quiz-container">
+      <header class="quiz-header">
+        <h2 class="quiz-title">Quiz Application</h2>
+        <div class="quiz-timer">
+          <span class="material-symbols-rounded">timer</span>
+          <p class="time-duration">
+            15
+          </p>
+        </div>
+      </header>
+      <div class="quiz-content">
+        <h1 class="qustion-text"></h1>
+        <ul class="answer-options"></ul>
+      </div>
+      <div class="quiz-footer">
+        <p class="Qustions-status"><b>2</b>of<b>10</b>Qustions</p>
+        <button class="next-qustion-btn">
+          Next
+          <span class="material-symbols-rounded">arrow_right_alt</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Result-Container  -->
+    <div class="result-container">
+      <img src="/quiz-over.png" alt="" class="result-img" />
+      <h2 class="result-title">Quiz Completed</h2>
+      <p class="result-message">
+        You Answered <b>3</b> out of <b>5</b> qustions correctly Great Offer!
+      </p>
+      <button class="try-again-btn">Try Again</button>
+    </div>
+    <script src="./javascript/questions.js"></script>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

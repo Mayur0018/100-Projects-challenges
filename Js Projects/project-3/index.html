@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-container">
+        <form onsubmit="return userValidations(event)">
+      <label for="">First_Name</label>
+      <input type="text" value="" name="first-name" class="user-name" /><br />
+      <label for="">Password</label>
+      <input type="password" name="password" class="password" />
+      <button onclick="userValidations()">Submit</button>
+    </div>
+    <script>
+      function userValidations() {
+        const UserName = document.querySelector(".user-name");
+        const password = document.querySelector(".password");
+
+        if (UserName == "" || password == "") {
+          alert("both are required");
+          return false;
+        }
+        alert("form Was Submited")
+    }
+    </script>
+  </body>
+</html>
