@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input
+        id="FirstName"
+        type="text"
+        value=""
+        name=""
+        placeholder="Enter Your Name"
+      />
+      <button type="submit" onclick="SubmitNmae()">Submit</button>
+      <ul id="EnterName"></ul>
+    </div>
+    <script>
+      function SubmitNmae() {
+        const EnterName = document.getElementById("FirstName").value;
+        console.log(EnterName);
+        const newData = document.createElement("li");
+        newData.textContent = EnterName;
+        document.getElementById("EnterName").appendChild(newData);
+        document.getElementById("FirstName").value = "";
+      }
+    </script>
+  </body>
+</html>
