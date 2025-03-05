@@ -17,7 +17,7 @@
     </div>
     <div class="title">
         <p>Welcome to MayurPaushak 1</p>
-        <p>Welcome to MayurPaushak 2</p>
+        <p class="second">Welcome to MayurPaushak 2</p>
         <p>Welcome to MayurPaushak 3</p>
     </div>
     <script>
@@ -27,9 +27,22 @@
       console.log(btn);
       let heading = document.getElementsByTagName("h1");
       console.log(heading);
-            
+
       let tittle = document.querySelector(".title");
       console.log(tittle.childNodes);
+      console.log(tittle.firstChild);
+      console.log(tittle.childNodes);
+
+      let titleTxt = document.querySelector(".second");
+      console.log(titleTxt.previousElementSibling);
+
+      let div = document.createElement("h1");
+      div.innerHTML = "Mayur is The Best Coder";
+      document.body.appendChild(div);
+      div.id = "Headings"
+      console.log(div);
+
+      
     </script>
 </body>
 </html>
