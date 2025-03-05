@@ -7,12 +7,29 @@
 </head>
 <body>
     <div>
+        <h1>First Heading</h1>
+        <h1>First Heading</h1>
+        <h1>First Heading</h1>
+        <h1>First Heading</h1>
+        <dinput type="text" name="language" value="js">
+        <input type="text" name="language" value="js">
         <p id="Mesaage">Write More Code And Learn More Code</p>
+    </div>
+    <div class="title">
+        <p>Welcome to MayurPaushak 1</p>
+        <p>Welcome to MayurPaushak 2</p>
+        <p>Welcome to MayurPaushak 3</p>
     </div>
     <script>
       let msg = document.getElementById("Mesaage");
       console.log(msg);
-      
+      let btn = document.getElementsByName("language")
+      console.log(btn);
+      let heading = document.getElementsByTagName("h1");
+      console.log(heading);
+            
+      let tittle = document.querySelector(".title");
+      console.log(tittle.childNodes);
     </script>
 </body>
 </html>
