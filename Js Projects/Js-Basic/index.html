@@ -20,6 +20,15 @@
         <p class="second">Welcome to MayurPaushak 2</p>
         <p>Welcome to MayurPaushak 3</p>
     </div>
+
+    <div>
+        <ul class="fruitesName">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>kiwi</li>
+        </ul>
+    </div>
     <script>
       let msg = document.getElementById("Mesaage");
       console.log(msg);
@@ -42,7 +51,21 @@
       div.id = "Headings"
       console.log(div);
 
+
+      let fruites = document.querySelector(".fruitesName");
+      let addfruitesNmae = document.createElement("li");
+    //   addfruitesNmae.innerHTML = "Chiku";
+    //   addfruitesNmae.textContent = "Chiku is One Of The Sweetest Fruite"
+    //   fruites.appendChild(addfruitesNmae);
+    //   console.log(fruites.textContent);
       
+    // //   addfruitesNmae.textContent = "Kiwi Won This World Cup"
+    //   fruites.append(addfruitesNmae);
+    //   fruites.prepend(addfruitesNmae);
+       
+      fruites.insertAdjacentHTML("afterbegin","<li>Greeps</li>");
+     let newNode =  fruites.cloneNode()
+      console.log(newNode);
     </script>
 </body>
 </html>
