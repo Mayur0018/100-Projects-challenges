@@ -64,8 +64,10 @@
     //   fruites.prepend(addfruitesNmae);
        
       fruites.insertAdjacentHTML("afterbegin","<li>Greeps</li>");
-     let newNode =  fruites.cloneNode()
+     let newNode =  fruites.cloneNode(true)
       console.log(newNode);
+
+      fruites.appendChild(newNode)
     </script>
 </body>
 </html>
