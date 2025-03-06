@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>
+  </head>
+  <body>
+    <input class="UserDetails Userid" type="text" id="userName" placeholder="userName" />
+    <!-- <div>
         <h1>First Heading</h1>
         <h1>First Heading</h1>
         <h1>First Heading</h1>
@@ -28,45 +29,54 @@
             <li>Banana</li>
             <li>kiwi</li>
         </ul>
-    </div>
+    </div> -->
     <script>
-      let msg = document.getElementById("Mesaage");
-      console.log(msg);
-      let btn = document.getElementsByName("language")
-      console.log(btn);
-      let heading = document.getElementsByTagName("h1");
-      console.log(heading);
+      let msg = document.getElementById("userName");
+      console.log(msg.attributes);
+      console.log(msg.getAttribute("placeholder"));
 
-      let tittle = document.querySelector(".title");
-      console.log(tittle.childNodes);
-      console.log(tittle.firstChild);
-      console.log(tittle.childNodes);
-
-      let titleTxt = document.querySelector(".second");
-      console.log(titleTxt.previousElementSibling);
-
-      let div = document.createElement("h1");
-      div.innerHTML = "Mayur is The Best Coder";
-      document.body.appendChild(div);
-      div.id = "Headings"
-      console.log(div);
-
-
-      let fruites = document.querySelector(".fruitesName");
-      let addfruitesNmae = document.createElement("li");
-    //   addfruitesNmae.innerHTML = "Chiku";
-    //   addfruitesNmae.textContent = "Chiku is One Of The Sweetest Fruite"
-    //   fruites.appendChild(addfruitesNmae);
-    //   console.log(fruites.textContent);
-      
-    // //   addfruitesNmae.textContent = "Kiwi Won This World Cup"
-    //   fruites.append(addfruitesNmae);
-    //   fruites.prepend(addfruitesNmae);
+      msg.setAttribute("class", "InputField");
+      console.log(msg.classList); 
+       console.log(msg);
+       console.log(msg.hasAttribute("type"));
+       console.log(msg.classList);
+       msg.classList.add("mayur")
+       console.log(msg);
        
-      fruites.insertAdjacentHTML("afterbegin","<li>Greeps</li>");
-     let newNode =  fruites.cloneNode(true)
-      console.log(newNode);
-      fruites.appendChild(newNode)
+      //   let btn = document   .getElementsByName("language")
+      //   console.log(btn);
+      //   let heading = document.getElementsByTagName("h1");
+      //   console.log(heading);
+
+      //   let tittle = document.querySelector(".title");
+      //   console.log(tittle.childNodes);
+      //   console.log(tittle.firstChild);
+      //   console.log(tittle.childNodes);
+
+      //   let titleTxt = document.querySelector(".second");
+      //   console.log(titleTxt.previousElementSibling);
+
+      //   let div = document.createElement("h1");
+      //   div.innerHTML = "Mayur is The Best Coder";
+      //   document.body.appendChild(div);
+      //   div.id = "Headings"
+      //   console.log(div);
+
+      //   let fruites = document.querySelector(".fruitesName");
+      //   let addfruitesNmae = document.createElement("li");
+      //   addfruitesNmae.innerHTML = "Chiku";
+      //   addfruitesNmae.textContent = "Chiku is One Of The Sweetest Fruite"
+      //   fruites.appendChild(addfruitesNmae);
+      //   console.log(fruites.textContent);
+
+      // //   addfruitesNmae.textContent = "Kiwi Won This World Cup"
+      //   fruites.append(addfruitesNmae);
+      //   fruites.prepend(addfruitesNmae);
+
+      //   fruites.insertAdjacentHTML("afterbegin","<li>Greeps</li>");
+      //  let newNode =  fruites.cloneNode(true)
+      //   console.log(newNode);
+      //   fruites.appendChild(newNode);
     </script>
-</body>
+  </body>   
 </html>
