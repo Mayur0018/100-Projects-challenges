@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const chartmessage = [
+        "Keep pushing forward! 🚀",
+        "Believe in yourself! 💪",
+        "Success is a journey, not a destination. 🌟",
+        "Stay positive and work hard! 💯",
+        "Every day is a new opportunity! 🌅",
+        "Dream big and never give up! ✨",
+        "Your hard work will pay off! 🔥",
+        "Great things take time, be patient. ⏳",
+        "You are capable of amazing things! 💙",
+        "Progress, not perfection. 🚶‍♂️",
+      ];
+
+      function FindMesage(messages, keyword) {
+        let messagesResult = [];
+        for (let getmessage of messages) {
+          if (getmessage.includes(keyword)) {
+            messagesResult.push(getmessage);
+          }
+        }
+        return messagesResult;
+      }
+      console.log(FindMesage(chartmessage, "pushing"));
+    </script>
+  </body>
+</html>
