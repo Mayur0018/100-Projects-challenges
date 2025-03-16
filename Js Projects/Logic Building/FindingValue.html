@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // linersearch algorithem to find correct value
+      const celebrities = [
+        { name: "Leonardo DiCaprio", ispapa: false },
+        { name: "Tom Cruise", ispapa: true },
+        { name: "Robert Downey Jr.", ispapa: true },
+        { name: "Keanu Reeves", ispapa: false },
+        { name: "Dwayne Johnson", ispapa: true },
+        { name: "Chris Hemsworth", ispapa: true },
+        { name: "Johnny Depp", ispapa: false },
+        { name: "Brad Pitt", ispapa: true },
+      ];
+      console.log(celebrities.length);
+
+      function findPapa() {
+        for (let index = 0; index < celebrities.length; index++) {
+          const persion = celebrities[index];
+          if (persion.ispapa) {
+            return "papa founded";
+          } 
+        }
+        return "Papa is Not Found";
+      }
+      console.log(findPapa());
+    </script>
+  </body>
+</html>
