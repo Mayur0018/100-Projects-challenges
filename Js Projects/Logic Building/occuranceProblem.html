@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          const dabateIdeas = [
+             "Should social media be regulated?",
+            "Regulation helps prevent misinformation and online harassment.",
+             "Regulation  Regulation  Regulation  Regulation  Regulation  Regulation   may infringe on freedom of speech.",
+             "Regulation  Regulation  Regulation  Regulation  Regulation  Regulation   may infringe on freedom of speech.",
+             "Regulation  Regulation  Regulation  Regulation  Regulation  Regulation   may infringe on freedom of speech.",
+             "Regulation  Regulation  Regulation  Regulation  Regulation  Regulation   may infringe on freedom of speech.",
+             "Regulation  Regulation  Regulation  Regulation  Regulation  Regulation   may infringe on freedom of speech.",
+            "Technology"
+        ];
+          function currentOcurence(topics,keyword){
+            let occerenec = {}
+            for(let news of topics ){
+                if(news.includes(keyword)){
+                  if(occerenec[keyword]){
+                    occerenec[keyword] = occerenec[keyword];
+
+                  }else{
+                    occerenec[keyword] = 1
+                  }
+                }
+            }
+            return occerenec
+          }
+      console.log(currentOcurence(dabateIdeas,"Regulation")
+      );
+    </script>
+  </body>
+</html>

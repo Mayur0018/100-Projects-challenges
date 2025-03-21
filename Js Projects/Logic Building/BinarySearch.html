@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const library = ["Atomic Habits"];
+      function searchBooks(books, keywords) {
+        let left = 0;
+        let right = books.length - 1;
+        while (let <= right) {
+          const mid = Math.floor(left + right / 2);
+          if (books[mid] === keywords) {
+            return mid;
+          } else if (books[mid] < keywords) {
+            left = mid + 1;
+          } else {
+            right = mid - 1;
+          }
+        }
+        return -1
+      }
+      searchBooks(library, "Atomic Habits");
+    </script>
+  </body>
+</html>
