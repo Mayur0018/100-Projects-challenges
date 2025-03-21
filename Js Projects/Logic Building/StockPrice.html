@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const stockPrice = [100, 105, 110, 115, 120];
+      function searchStock(price) {
+        const thersolod = 0.5;
+
+        for (let i = 0; i < price.length; i++) {
+          console.log(price[i]);
+          const priceChnge = price[i] - price[i - 1];
+          if (priceChnge >= thersolod) {
+            return 1;
+          }
+        }
+        return -1;
+      }
+      searchStock(stockPrice);
+    </script>
+  </body>
+</html>
