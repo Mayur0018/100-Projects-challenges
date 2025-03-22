@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const shopinCart = {
+        laptop: { price: 800, quantity: 1 },
+        headphones: { price: 50, quantity: 2 },
+      };
+
+      function findtotalshopingcartprice(shopinCart) {
+        let totalPrince = 0;
+        for (let item in shopinCart) {
+          totalPrince =
+            totalPrince + shopinCart[item].price * shopinCart.quantity;
+        }
+        return totalPrince;
+      }
+      console.log(findtotalshopingcartprice(shopinCart));
+    </script>
+  </body>
+</html>
