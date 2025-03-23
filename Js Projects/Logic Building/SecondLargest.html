@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      // method 1
       const array = [0, 10, 2, 85, 60];
       function findSecondLargest(array) {
         let max = -Infinity;
@@ -21,6 +22,20 @@
         return secondMax;
       }
       console.log(findSecondLargest(array));
+
+      // method 2
+
+      const intArray = [2, 8, 9, 7];
+      const largestValue = (arr) => {
+        findLargestValue = Math.max(...intArray);
+        index = arr.indexOf(findLargestValue);
+        arr.splice(index, 1);
+        secondLargestValue = Math.max(...intArray);
+        return secondLargestValue;
+      };
+
+ 
+      console.log(largestValue(intArray));
     </script>
   </body>
 </html>
