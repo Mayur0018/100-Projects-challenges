@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [10, 20, 30, 40, 50, 60];
+      let minValue = numbers[0];
+      let maxValue = numbers[0];
+      function findMaxMinValue(numbers) {
+        for (let i=0; i < numbers.length; i++) {
+          if (numbers[i] > maxValue) {
+            maxValue = numbers[i];
+          } if (numbers[i] < minValue) minValue = numbers[i];
+        }
+        return {
+          minValue,
+          maxValue,
+        };
+      }
+      console.log(findMaxMinValue(numbers));
+    </script>
+  </body>
+</html>

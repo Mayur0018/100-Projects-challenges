@@ -19,8 +19,9 @@
         // second method 
 
         const  number = [10,40,20,50,10];
-        const finduplicatesofarray = number.filter((item,index,arr)=> arr.indexOf())
+        const finduplicatesofarray = number.filter((item,index,arr)=> arr.indexOf(item) !== index)
         
+        console.log(finduplicatesofarray);
         
     </script>
 </body>
