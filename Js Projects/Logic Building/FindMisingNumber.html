@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-             
+      const arrnum = [1, 2, 3, 4, 5, 9, 10];
+      const missarray = [...arrnum];
+      const missingValue = () => {
+        const minValues = Math.min(...arrnum);
+        const maxValue = Math.max(...arrnum);
+        console.log(minValues);
+        console.log(maxValue);
+      };
+      console.log(missingValue(arrnum));
     </script>
-</body>
+  </body>
 </html>
