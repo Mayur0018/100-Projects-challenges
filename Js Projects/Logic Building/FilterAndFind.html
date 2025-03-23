@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const empArr = [
+            {name :"king",age : 42},
+            {name : "king2" ,age : 65},
+            {name : "king3" ,age : 80},
+            {name : "king4" ,age : 60},
+            {name : "king5" ,age : 80},
+            {name : "king6" ,age : 100},
+
+        ]
+        const findvalues = empArr.filter((items)=> items.age> 42 );
+        console.log(findvalues);
+       
+        const findevaluebyfind = empArr.find((items)=> items.age > 80);
+        console.log(findevaluebyfind);
+        
+    </script>
+</body>
+</html>
