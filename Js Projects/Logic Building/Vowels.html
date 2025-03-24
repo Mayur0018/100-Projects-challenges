@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const string = prompt("Enter String");
+      // string = string.toLocaleLowerCase();
+      // if(string == "a" || string == "b" || string == "c" || string == "0" || string == "u"){
+      //     console.log(`${string} is vowel`);
+      // }else{
+      //     console.log(`${string} is Not Vowel`);
+
+      // }
+
+      let string = prompt("Enter Your Name");
+      let vowels = ["a", "e", "i", "o", "u"];
+      let count = 0;
+      function FindVowelOfString(str) {
+        for (let letter of str.toLowerCase()) {
+          if (vowels.includes(letter)) {
+            count++;
+          }
+        }
+        return count;
+      }
+
+      console.log(FindVowelOfString(string));
+    </script>
+  </body>
+</html>
