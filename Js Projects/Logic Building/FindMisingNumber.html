@@ -7,13 +7,18 @@
   </head>
   <body>
     <script>
-      const arrnum = [1, 2, 3, 4, 5, 9, 10];
-      const missarray = [...arrnum];
-      const missingValue = () => {
-        const minValues = Math.min(...arrnum);
+      const arrnum = [1, 2, 3, 4, 5, 9, 50];
+      const arram2 = [10,20,30,40,50]
+      const missarray = [];
+      const missingValue = (arr) => {
+        const minValues = Math.min(...arram2);
         const maxValue = Math.max(...arrnum);
-        console.log(minValues);
-        console.log(maxValue);
+        for (let i = minValues; i < maxValue; i++) {
+          if (arr.indexOf(i) < 0) {
+            missarray.push(i);
+          }
+        }
+        return missarray;
       };
       console.log(missingValue(arrnum));
     </script>
