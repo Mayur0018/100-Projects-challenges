@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var number = prompt("Enter The Number");
+      if (number == 1) {
+        console.log(`${number} is not Prime neither compiste`);
+      } else if (number < 1) {
+        console.log(`prime number of ${number} is not posibble`);
+      } else {
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            var result = `${number} is not prime number`;
+          } else {
+            var result = `${number} is prime Number`;
+          }
+        }
+        console.log(result);
+      }
+    </script>
+  </body>
+</html>
