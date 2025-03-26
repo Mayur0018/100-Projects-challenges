@@ -7,11 +7,11 @@
   </head>
   <body>
     <script>
-      // Remove Duplicates From Array 
-      const arr = [10, 20, 30, 40, 10, 20, 30];
-      const removeDuplicates = [...new Set(arr)];
-      console.log(removeDuplicates);
-      
+      var arr1 = [10, 20, 30, 40, 50, 80, 10, 10, 60];
+      var arr2 = [10, 20, 30, 70, 80, 90];
+
+      let intersection = arr1.filter((err) => arr2.includes(err));
+      console.log([...new Set(intersection)]);
     </script>
   </body>
 </html>
