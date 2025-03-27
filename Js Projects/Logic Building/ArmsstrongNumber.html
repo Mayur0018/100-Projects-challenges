@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = prompt("plases enter number");
+        var temp = number;
+        var lengthOfDigtnumber = number.toString().length
+        var sum = 0;
+            var digit = temp % 10;
+            console.log(digit);
+            sum += digit ** lengthOfDigtnumber;
+            console.log(sum);
+            temp = temp / 10;
+            console.log(temp);
+    </script>
+</body>
+</html>
