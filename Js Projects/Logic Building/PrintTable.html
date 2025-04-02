@@ -6,14 +6,29 @@
     <title>Document</title>
   </head>
   <body>
+    <p class="myName">Hellow Mayur</p>
+    <button class="btn">Chnage Text</button>
     <script>
-      function table(number) {
-        for (let i = 1; i <= 10; i++) {
-          var res = i * number;
-          console.log(`${number} x ${i} =  ${res}`);
-        }
-      } 
-      table(4);
+      // function table(number) {
+      //   for (let i = 1; i <= 10; i++) {
+      //     var res = i * number;
+      //     console.log(`${number} x ${i} =  ${res}`);
+      //   }
+      // }
+      // table(4);
+      const ChnageName = document.querySelector(".myName");
+      const Button = document.querySelector(".btn");
+
+      function changetheTextOfbtn() {
+        Button.addEventListener("click", () => {
+          if (ChnageName.innerHTML == "Hellow Mayur") {
+            ChnageName.innerHTML = "You just clicked the button!";
+          } else {
+            ChnageName.innerHTML = "Hellow Mayur";
+          }
+        });
+      }
+      changetheTextOfbtn();
     </script>
   </body>
 </html>
