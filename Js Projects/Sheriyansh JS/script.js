@@ -66,7 +66,7 @@
 // let a = 1;
 // let sum = 0;
 // while (a <= 10) {
-//    sum = a + sum 
+//    sum = a + sum
 //   a++;
 // }
 
@@ -77,3 +77,173 @@
 // for( let Strvalues of a){
 //     console.log(Strvalues);
 // }
+
+// for (let i = 0; i < 20; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
+// let i = 5;
+// do {
+//   console.log(i);
+//   i--;
+// } while (i > 0);
+
+// let fect = 1;
+
+// for (let i = 5; i > 0; i--) {
+//   fect = fect * i;
+// }
+// console.log(fect);
+
+// var hold = 0;
+// for(let i =1; i<4; i++){
+//     let str = ""
+//     for(let j = 1; j<4; j++){
+//        str  += `${hold} `
+//        hold++;
+//     }
+//     console.log(str);
+// }
+
+//  let arr = [1,2,3,4];
+//  for(let i = arr.length-1; i>=0; i--){
+//     console.log(arr[i]);
+//  }
+//  console.log(arr);
+// let num = 1;
+// while (num < 101) {
+//   if (num % 5 === 0) {
+//     console.log(num);
+//   }
+//   num++;
+// }
+
+// find the key in Object
+// let obj = {
+//     "First_Name" : "Mayur",
+//     "Last_Name" : "Nishad",
+//     "Age" : 25
+// }
+
+// for(let key in obj){
+//     console.log(key);
+
+// }
+
+// let a = ["idatainjump","pokemon","shinchane","ben10","powerRnager"];
+// a.map((items)=>(
+//     console.log(items)
+// ))
+
+// let arr = [10, 20, 30, 40];
+
+// arr.pop();
+// console.log(arr);
+
+// arr.unshift(9);
+// arr.unshift(8);
+// console.log(arr);
+
+// let newarray = arr.slice(1,3);
+// console.log(newarray);
+
+// console.log(arr.indexOf(20));
+
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr.includes(10));
+
+// let a = [1,2,3];
+// let b = [3,4,5];
+
+// console.log(a.concat(b));
+
+// let c = [5,4,3,1,2];
+
+// c.sort();
+// console.log(c);
+
+// let a = [2,1,3,4,5];
+// console.log(a);
+
+// let c = [...a];
+// console.log(c);
+
+// for(let i = 0; i<a.length-1; i++){
+//     if(a[i]> a[i+1]){
+//         let temp = a[i];
+//         a[i] = a[i+1];
+//         a[i+1] = temp
+//     }
+// }
+
+// console.log(a);
+
+// functions
+
+// function frindoddevenNumber(num) {
+//   if (num % 2 === 0) {
+//     console.log("Number is even");
+//   } else {
+//     console.log("Number is Odd");
+//   }
+// }
+// frindoddevenNumber(prompt("Enter The Number"));
+
+// function area(r){
+//     return Math.PI * r * r;
+// }
+// console.log(area(12));
+
+// function sumOfarr(arr){
+//     let sum =0;
+//     arr.forEach((v)=>{
+//       sum = sum + v
+//     })
+//     return sum;
+// }
+
+// console.log(sumOfarr([10,20,30,40,50]));
+
+// function checker(string,char){
+//     return string.startsWith(char)
+// }
+// console.log(checker("Mayur","M"));
+
+// function findmaxvalue(a,b){
+//  let c =   Math.max(a,b)
+//     return c;
+// }
+// console.log(findmaxvalue(10,50));
+
+// function findfact(num){
+//   let fact = 1;
+//   for(let i =1; i<num; i++){
+//     fact = fact * i
+//   }
+//   return fact
+// }
+
+// console.log(findfact(10));
+
+// function retunstr(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed = reversed + str[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(retunstr("Mayur"));
+
+// let arr = [];
+// function number(arr){
+
+//     for(let i=0; i<arr.length; i++){
+//         Math.max(arr)    
+//     }
+//     return arr
+// }
+// console.log(number([10,20,30,40]));
+
+
