@@ -246,14 +246,19 @@
 // }
 // console.log(number([10,20,30,40]));
 
-function abcd(arr) {
-  var max = 0;
-  for (var i = 1; i < arr.length; i++) {
-    if (arr[i] > arr[max]) {
-      max = i;
-    }
-  }
-  return arr[max];
-}
+// function abcd(arr) {
+//   var max = 0;
+//   for (var i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[max]) {
+//       max = i;
+//     }
+//   }
+//   return arr[max];
+// }
 
-console.log(abcd[(10, 20, 50, 70, 40)]);
+// console.log(abcd[(10, 20, 50, 70, 40)]);
+
+function abcd() {
+  console.log("Hellow World");
+}
+abcd()
