@@ -262,3 +262,14 @@
 //   console.log("Hellow World");
 // }
 // abcd()
+
+function validatePalindrome(str) {
+  for (let i = 0; i < Math.floor(str.length / 2); i++) {
+    if (str[i] === str[str.length - 1 - i]) {
+      return "String is not a palindrome";
+    }
+  }
+  return "String is a palindrome";
+}
+
+console.log(validatePalindrome("pap"));
