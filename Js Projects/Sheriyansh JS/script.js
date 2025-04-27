@@ -258,7 +258,7 @@
 
 // console.log(abcd[(10, 20, 50, 70, 40)]);
 
-function abcd() {
-  console.log("Hellow World");
-}
-abcd()
+// function abcd() {
+//   console.log("Hellow World");
+// }
+// abcd()

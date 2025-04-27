@@ -1,9 +1,7 @@
-import Accordian from "./components/Accordion";
-import Index from "./components/Todo-app/Index";
+import ChipsInput from "./components/chips";
 function App() {
   return <>
-  <Accordian/>
-  <Index/>
+<ChipsInput />
   </>;
 }
 
