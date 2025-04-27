@@ -263,13 +263,39 @@
 // }
 // abcd()
 
-function validatePalindrome(str) {
-  for (let i = 0; i < Math.floor(str.length / 2); i++) {
-    if (str[i] === str[str.length - 1 - i]) {
-      return "String is not a palindrome";
-    }
-  }
-  return "String is a palindrome";
-}
+// function validatePalindrome(str) {
+//   const cleanedStr = str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+//   for (let i = 0; i < Math.floor(cleanedStr.length / 2); i++) {
+//     if (cleanedStr[i] !== cleanedStr[cleanedStr.length - 1 - i]) {
+//       return "String is not a palindrome";
+//     }
+//   }
+//   return "String is a palindrome";
+// }
 
-console.log(validatePalindrome("pap"));
+// console.log(validatePalindrome("pap"));
+// let count = 0;
+
+// function makeCounter() {
+//   function incremnet() {
+//     count++;
+//     console.log(count);
+//   }
+//   function decrement() {
+//     count--;
+//   }
+//   return {
+//     incremnet,
+//     decrement,
+//   };
+// }
+
+// const counter = makeCounter();
+// counter.incremnet();
+// counter.decrement();
+
+
+  // Your implementation
+
+
+    // Your implementation
