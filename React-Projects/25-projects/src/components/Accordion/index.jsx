@@ -49,7 +49,7 @@ export default function Accordian() {
     if (findIndexOfMiltipleId === -1) copyMultiple.push(getCurrentId);
     else copyMultiple.splice(findIndexOfMiltipleId, 1);
     SetMultiple(copyMultiple);
-  } 
+  }
 
   return (
     <>
@@ -78,7 +78,7 @@ export default function Accordian() {
               </div>
               {enableMultiSection
                 ? multipleOption.includes(iteam.id) && (
-                    <p className="px-4 py-4">{iteam.content}</p>
+                    <p className="px-4  py-4">{iteam.content}</p>
                   )
                 : selected === iteam.id && (
                     <div className="w-96 bg-amber-950 text-amber-50">
@@ -101,4 +101,4 @@ export default function Accordian() {
     </>
   );
 }
-    
+  
