@@ -5,7 +5,7 @@ const newtwxt = document.getElementsByClassName("newtwxt")[0];
 
 function geanratePragraphp() {
   const newElement = document.createElement("p"); 
-  newElement.innerHTML = "Mayur is the best coder"; 
+  newElement.innerHTML = "Mayur is the best "; 
   newtwxt.appendChild(newElement); 
 }
 
