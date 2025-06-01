@@ -19,9 +19,25 @@
       addLanguage("React");
       addLanguage("React");
 
-      const promiseone = new promise()
+      const promiseone = new promise(function (resolve, reject) {
+        setTimeout(() => {
+          console.log("Async Task is Complete");
+          resolve();
+        }, 1000);
+      });
       console.log(promiseone);
-      
+      promiseone.then(function () {
+        console.log("Promise consumed");
+      });
+
+      new Promise(function (resolve, reject) {
+        setTimeout(() => {
+          console.log("Async task 2");
+          resolve();
+        }, 1000);
+      }).then(function () {
+        console.log("Async 2 resolved");
+      });
     </script>
   </body>
 </html>
