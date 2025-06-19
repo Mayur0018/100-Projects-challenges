@@ -302,7 +302,8 @@
 //   console.log(i);
 // }
 
-const str = "Mayur is the best logic building Programmer";
-const stringReverse = str.split("").map((words)=>{
-    return words.split("").reverse().join();
-})
+var str = "Mayur is the best logic building Programmer";
+var stringReverse = str.split(" ").map((words) => {
+  return words.split("").reverse().join(" ");
+});
+console.log(stringReverse.join(" "));
