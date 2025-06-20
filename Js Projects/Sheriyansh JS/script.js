@@ -326,7 +326,7 @@
 
 // qustion 4 string reverse 
 function reverseNumber(num){
-    num.toString().split("").reverse().join();
+    return num.toString().split().reverse().join();
 }
 console.log(reverseNumber(18));
 
