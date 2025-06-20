@@ -310,5 +310,9 @@
 // console.log(stringReverse.join(" "));
 
 // qustion 2 solve 
-
+function checkArray(elem){
+    console.log(Array.isArray(elem));
+}
+checkArray([]);
+checkArray({})
 
