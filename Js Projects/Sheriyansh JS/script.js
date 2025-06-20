@@ -309,10 +309,24 @@
 // });
 // console.log(stringReverse.join(" "));
 
-// qustion 2 solve 
-function checkArray(elem){
-    console.log(Array.isArray(elem));
+// qustion 2 solve
+// function checkArray(elem){
+//     return(Array.isArray(elem));
+// }
+// console.log(checkArray([]));
+// console.log(checkArray({}));
+
+// Qustion 3 solve
+// duplicat Array
+
+// let arr = [10, 20, 30, 40, 50];
+
+// console.log(arr.concat(arr));
+
+
+// qustion 4 string reverse 
+function reverseNumber(num){
+    num.toString().split("").reverse().join();
 }
-checkArray([]);
-checkArray({})
+console.log(reverseNumber(18));
 
