@@ -302,8 +302,13 @@
 //   console.log(i);
 // }
 
-var str = "Mayur is the best logic building Programmer";
-var stringReverse = str.split(" ").map((words) => {
-  return words.split("").reverse().join(" ");
-});
-console.log(stringReverse.join(" "));
+// question 1 solve
+// var str = "Mayur is the best logic building Programmer";
+// var stringReverse = str.split(" ").map((words) => {
+//   return words.split("").reverse().join(" ");
+// });
+// console.log(stringReverse.join(" "));
+
+// qustion 2 solve 
+
+
