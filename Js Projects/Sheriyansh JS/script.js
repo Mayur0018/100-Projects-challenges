@@ -410,14 +410,25 @@
 
 // qustion 12 typeteller
 
-function retrive(arr, n = 1) {
-  if (n <= arr.lenght) {
-    for (let i = 0; i < n; i++) {
-      console.log(arr[i]);
-    }
-  } else {
-    console.log(n + "itne toh element he nahi");
-  }
-}
+// function retrive(arr, n = 1) {
+//   if (n <= arr.lenght) {
+//     for (let i = 0; i < n; i++) {
+//       console.log(arr[i]);
+//     }
+//   } else {
+//     console.log(n + "itne toh element he nahi");
+//   }
+// }
 
-retrive([10, 20, 20], 5);
+// retrive([1, 2, 2], 10);
+
+// qustion 13 most frequnet array 
+// function a(arr){
+//     let b = {};
+//     arr.forEach((elem)=>{
+//      if(b.hasOwnProperty(elem)) b[elem]++;
+//      else b[elem] = 1; 
+//     })
+//     console.log(b);
+// }
+// a([1,1,1,2,1,45,75]);
