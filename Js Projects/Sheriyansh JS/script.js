@@ -422,13 +422,25 @@
 
 // retrive([1, 2, 2], 10);
 
-// qustion 13 most frequnet array 
+// qustion 13 most frequnet array
 // function a(arr){
 //     let b = {};
 //     arr.forEach((elem)=>{
 //      if(b.hasOwnProperty(elem)) b[elem]++;
-//      else b[elem] = 1; 
+//      else b[elem] = 1;
 //     })
 //     console.log(b);
 // }
 // a([1,1,1,2,1,45,75]);
+
+// qustion 14 shuffle karo
+
+function shufflekaro(arr) {
+  var totshuffleArea = arr.lengthl;
+  while (totshuffleArea > 0) {
+    totshuffleArea--;
+    let totshuffleArea = Math.floor(Math.random() * totshuffleArea);
+    let temp = arr[totshuffleArea];
+    arr[totshuffleArea] = temp;
+  }
+}
