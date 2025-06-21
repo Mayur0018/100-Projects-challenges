@@ -323,10 +323,81 @@
 
 // console.log(arr.concat(arr));
 
+// qustion 4 string reverse
+// function reverseNumber(num){
+//     return num.toString().split().reverse().join();
+// }
+// console.log(reverseNumber(18));
 
-// qustion 4 string reverse 
-function reverseNumber(num){
-    return num.toString().split().reverse().join();
-}
-console.log(reverseNumber(18));
+// qustion 5
 
+// function reverseNumber(num) {
+//   let rev = 0;
+//   while (num > 0) {
+//     var rem = num % 10;
+//     rev = rev * 10 + rem;
+//     num = Math.floor(num / 10);
+//   }
+//   return rev;
+// }
+
+// console.log(reverseNumber(123456789));
+
+// qustion 6 palidrome checker
+
+// function checkpelidrome(str){
+//   let reversed =   str.split("").reverse().join("");
+//   if(reversed === str){
+//     return true;
+//   }
+//   return false;
+// }
+// console.log(checkpelidrome("markram"));
+
+// qustion- 7 write alphabetic order
+// function stringAlphbetic(str){
+//      return str.split("").sort();
+// }
+// console.log(stringAlphbetic("mayur"));
+
+// qustion 8 captial first word
+// function CaptilizeWord(str) {
+//   const capswords = str
+//     .split(" ")
+//     .map((words) => words.charAt(0).toUpperCase() + words.substring(1));
+//  return capswords.join(" ");
+// }
+// console.log(CaptilizeWord("mayur is the best coder"));
+// function occ(str) {
+//   var occurence = {};
+//   str.split("").forEach((ele) => {
+//     if (occurence.hasOwnProperty(ele) === false) {
+//       occurence[ele] = 1;
+//     } else {
+//       occurence[ele]++;
+//     }
+//   })
+//    return occurence;
+// }
+// console.log(occ("aaaa"));
+
+// qustion 9 sum off all array elements
+// const arr = [10,20,30,40];
+// var sum = 0;
+
+// arr.forEach((elem)=>(
+//     sum = sum + elem
+// ))
+// console.log(sum);
+
+// qustion 10 number off array and string
+// const arr = ["Mayur", 182, "Aakash", 45];
+// let sum = 0;
+// arr.forEach((elm) => {
+//   if (typeof elm === "number") {
+//     sum = sum + elm;
+//   }
+//   return sum;
+// });
+
+// console.log(sum);
