@@ -402,3 +402,22 @@
 
 // console.log(sum);
 
+// qustion 11 clone the array
+// function cloneArr(arr){
+//     return [...arr];
+// }
+// console.log(cloneArr([10,20,30,40]));
+
+// qustion 12 typeteller
+
+function retrive(arr, n = 1) {
+  if (n <= arr.lenght) {
+    for (let i = 0; i < n; i++) {
+      console.log(arr[i]);
+    }
+  } else {
+    console.log(n + "itne toh element he nahi");
+  }
+}
+
+retrive([10, 20, 20], 5);
