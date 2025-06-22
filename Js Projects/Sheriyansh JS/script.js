@@ -435,12 +435,12 @@
 
 // qustion 14 shuffle karo
 
-function shufflekaro(arr) {
-  var totshuffleArea = arr.lengthl;
-  while (totshuffleArea > 0) {
-    totshuffleArea--;
-    let totshuffleArea = Math.floor(Math.random() * totshuffleArea);
-    let temp = arr[totshuffleArea];
-    arr[totshuffleArea] = temp;
-  }
-}
+// function shufflekaro(arr) {
+//   var totshuffleArea = arr.lengthl;
+//   while (totshuffleArea > 0) {
+//     totshuffleArea--;
+//     let totshuffleArea = Math.floor(Math.random() * totshuffleArea);
+//     let temp = arr[totshuffleArea];
+//     arr[totshuffleArea] = temp;
+//   }
+//}
