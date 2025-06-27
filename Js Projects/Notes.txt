@@ -1,0 +1,2 @@
+javascript is programing language that is used converting static web page to intreactive and dynamic.
+datatypes in js sting ,boolean ,undefind,null
