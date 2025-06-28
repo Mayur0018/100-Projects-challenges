@@ -14,3 +14,8 @@ binary oprator is oprate with two oprands;
 x +y;
 ternary oprator : condstion ? true : false;
 short circuit evaltuion :- 
+strick equality :- 
+rest oprator is collect to all  remaning argumenets in array.
+find method ko jab bhi koi first coditions true milegi vvo bas usi ko satisfied karega.
+slice is use subset off array start inedex to end of inedex.
+concat method is not change original array.
