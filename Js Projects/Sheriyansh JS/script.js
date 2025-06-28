@@ -449,3 +449,8 @@
 //   var a = 10;
 // }
 // console.log(a);
+// let value;
+
+// value =25;
+// console.log(value);
+

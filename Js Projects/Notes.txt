@@ -7,7 +7,9 @@ function is block of the code that performe a spasic of task
 object is datype allow key value pair.
 hoisting  is javascript behaviour whree functrion deaclaratrion are moved on top of the resprictive scope during compliations.
 Primitive & Non Primitive:- primitve numbers ,string ,boolean ,undefind ,null
-non primitve :- fuction ,array ,object,data ,reg exp
-
- 
-
+non primitve :- fuction ,array ,object,data ,reg exp;
+Unary oprator = --,++;
+binary oprator is oprate with two oprands;
+x +y;
+ternary oprator : condstion ? true : false;
+short circuit evaltuion :- 
