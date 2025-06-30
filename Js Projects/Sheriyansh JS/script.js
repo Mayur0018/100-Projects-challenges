@@ -454,3 +454,12 @@
 // value =25;
 // console.log(value);
 
+// const arr = [1,2,3,4,5,6];
+// arr.splice(0,2,5,6);
+// console.log(arr);
+// // 56456
+
+// const arr = [10,20,30,40,50];
+// let newarray = arr.slice(0,2);
+// console.log(newarray);
+// console.log(arr);
