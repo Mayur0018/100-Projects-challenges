@@ -463,3 +463,15 @@
 // let newarray = arr.slice(0,2);
 // console.log(newarray);
 // console.log(arr);
+var chunk = function(arr, size) {
+    let result = [];
+    let index =0;
+    while(index < arr.length){
+        const chunk = arr.slice(index,index+size);
+        result.push(chunk);
+        index = index +  size;
+    }
+    return result;
+};
+
+console.log(chunk([10,20,30,40,50,60],2))
