@@ -475,7 +475,7 @@
 // };
 // console.log(chunk([10,20,30,40,50,60],2))
 
-// pushing values in array 
+// pushing values in array
 // var valuefilter = function (arr, fn) {
 //   let newarr = [];
 
@@ -494,3 +494,18 @@
 // let output =  greet();
 // console.log(output);
 
+// const sortby = function(arr,fn){
+//  return arr.sort((a,b)=> fn(a)-fn(b));
+// }
+// let arr = [50,20,30,40,10];
+// let fn = (x)=> x/2;
+// console.log(sortby(arr,fn));
+
+// const revesethestring = (strvalue) => {
+//   let str = "";
+//   for (let i = strvalue.length - 1; i >= 0; i--) {
+//     str += strvalue[i];
+//   }
+//   return str;
+// };
+// console.log(revesethestring("mayur"));
