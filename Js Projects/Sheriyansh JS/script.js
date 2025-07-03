@@ -501,6 +501,7 @@
 // let fn = (x)=> x/2;
 // console.log(sortby(arr,fn));
 
+// string reverse 
 // const revesethestring = (strvalue) => {
 //   let str = "";
 //   for (let i = strvalue.length - 1; i >= 0; i--) {
