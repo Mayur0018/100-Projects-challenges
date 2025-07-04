@@ -510,3 +510,18 @@
 //   return str;
 // };
 // console.log(revesethestring("mayur"));
+
+
+// use reducer withou any metodh
+// var reduce = function(nums, fn, init) {
+//     let val = init;
+//     for(let i =0; i<= nums.length; i++){
+//         val = fn(val, nums[i]);
+//     }
+//     return val;
+// };
+
+// const nums = [1,2,3,4,5];
+// const fn = (acc,curr)=> acc + curr;
+// const init = 0;
+// console.log(nums.fn,init);
