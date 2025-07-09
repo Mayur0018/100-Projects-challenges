@@ -525,3 +525,6 @@
 // const fn = (acc,curr)=> acc + curr;
 // const init = 0;
 // console.log(nums.fn,init);
+// let myName = document.querySelector("h1");
+// myName.textContent = "Mayur Best hai or rahega";
+// console.log(myName);

@@ -1,0 +1,1 @@
+innerhtml ka use isliye kiya jab kisi element ke andar html ko manipluate karna hota hai.
