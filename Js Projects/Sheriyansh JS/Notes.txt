@@ -1,1 +1,7 @@
 innerhtml ka use isliye kiya jab kisi element ke andar html ko manipluate karna hota hai.
+what is The Difference Between Element And Text Node
+quaryselector me hame # ka use karna hota hai;
+quaryselector jo sari classes ko select karta jaise hamne buy now ko kiya
+innerText only inner text dega jo show hoo rahe hoo.
+textContent yha sabhi content ko dega jo visible bhi na hoo istype ka.
+append child hamesa last me element add karta prepend child start me end karta hai.

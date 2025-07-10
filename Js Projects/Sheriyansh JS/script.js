@@ -501,7 +501,7 @@
 // let fn = (x)=> x/2;
 // console.log(sortby(arr,fn));
 
-// string reverse 
+// string reverse
 // const revesethestring = (strvalue) => {
 //   let str = "";
 //   for (let i = strvalue.length - 1; i >= 0; i--) {
@@ -510,7 +510,6 @@
 //   return str;
 // };
 // console.log(revesethestring("mayur"));
-
 
 // use reducer withou any metodh
 // var reduce = function(nums, fn, init) {
@@ -524,7 +523,13 @@
 // const nums = [1,2,3,4,5];
 // const fn = (acc,curr)=> acc + curr;
 // const init = 0;
-// console.log(nums.fn,init);
+// console.log(nums.fn, init);
 // let myName = document.querySelector("h1");
+// let h1 = document.createElement("h1");
 // myName.textContent = "Mayur Best hai or rahega";
-// console.log(myName);
+// h1.textContent = "hey mayur is the best coder";
+// myName.append(h1);
+// let li = document.querySelectorAll("li");
+// for (let i = 0; i< li.length; i++){
+//     console.log(li[i].textContent);
+// }
