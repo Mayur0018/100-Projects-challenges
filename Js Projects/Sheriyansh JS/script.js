@@ -533,3 +533,13 @@
 // for (let i = 0; i< li.length; i++){
 //     console.log(li[i].textContent);
 // }
+// let li = document.querySelectorAll("li");
+// li.forEach((elem) => (elem.style.fontSize = "48px"));
+// console.log(li);
+
+let li = document.querySelectorAll("li");
+li.forEach((elm) =>
+  elm.addEventListener("click", function () {
+    elm.style.backgroundColor = "red";
+  })
+);
