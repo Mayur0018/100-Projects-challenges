@@ -560,3 +560,9 @@
 // window.addEventListener("keydown", function (elem) {
 //   h1.textContent = elem.key;
 // });
+let abcd = document.querySelector("#abcd");
+
+window.addEventListener("mousemove", function (deft) {
+  abcd.style.top = deft.clientY + "px";
+  abcd.style.left = deft.clientX + "px";
+});
