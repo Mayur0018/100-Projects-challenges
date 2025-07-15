@@ -6,3 +6,5 @@ innerText only inner text dega jo show hoo rahe hoo.
 textContent yha sabhi content ko dega jo visible bhi na hoo istype ka.
 append child hamesa last me element add karta prepend child start me end karta hai.
 kuch screen pe ho apko reaction lena uswakt apko event hndle karna ana chayie event matalab kuch action hua event listner ka matlab hai apane koi action ka reaction diya
+obsinal chaining means agar uske andar file hai toh acces karo varna mat karo.
+quaryselectorAll me jab bhi tu koi value dalega vo array ke form me ayegi.
