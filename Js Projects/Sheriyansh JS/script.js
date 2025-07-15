@@ -537,9 +537,26 @@
 // li.forEach((elem) => (elem.style.fontSize = "48px"));
 // console.log(li);
 
-let li = document.querySelectorAll("li");
-li.forEach((elm) =>
-  elm.addEventListener("click", function () {
-    elm.style.backgroundColor = "red";
-  })
-);
+// let li = document.querySelectorAll("li");
+// li.forEach((elm) =>
+//   elm.addEventListener("click", function () {
+//     elm.style.backgroundColor = "red";
+//   })
+// );
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("input", function (elem) {
+//   if (elem.data !== null) {
+//     console.log(elem.data);
+//   }
+// });
+// let select = document.querySelector("select");
+// let device = document.querySelector("#device");
+
+// select.addEventListener("change", function (elm) {
+//   device.textContent = `${elm.target.value} My Fav Mtb Selected`;
+// });
+// let h1 = document.querySelector("h1");
+// window.addEventListener("keydown", function (elem) {
+//   h1.textContent = elem.key;
+// });
