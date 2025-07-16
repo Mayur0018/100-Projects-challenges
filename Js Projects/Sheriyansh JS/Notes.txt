@@ -8,3 +8,9 @@ append child hamesa last me element add karta prepend child start me end karta h
 kuch screen pe ho apko reaction lena uswakt apko event hndle karna ana chayie event matalab kuch action hua event listner ka matlab hai apane koi action ka reaction diya
 obsinal chaining means agar uske andar file hai toh acces karo varna mat karo.
 quaryselectorAll me jab bhi tu koi value dalega vo array ke form me ayegi.
+evnet bubling means when multiple events will click so event bubling happnings matalb child pe click karne par multiple event happen ho usse event capturing kaha jata hai.
+event capture ka matlab jab bhi koi event hoti hai toh vo event top se bottom phase me jati hai jisse event capturing kha jata hai vo show nahi hota but vo dikhta hai so jisse event capturing kha jata hai.......
+pahle capture phase chalta fhir bubling pahse chalta hai.
+event capture ka matlab jab hum usse pahse ko on karege tab vo uss hisab se chalehga jo ki bottom to top hoga btn.addEventListner("click",function(){
+    console.log("preactice Make U Perfect Man")
+},true);
