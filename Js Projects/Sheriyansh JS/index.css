@@ -7,3 +7,9 @@ body {
   height: 200px;
   position: absolute;
 }
+small {
+  color: red;
+}
+#hide {
+  display: none;
+}
