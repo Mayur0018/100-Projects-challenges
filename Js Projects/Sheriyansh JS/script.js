@@ -580,14 +580,15 @@
 //      span.style.color = "black"
 //   }
 // });
-let nm = document.querySelector("#name");
-let em = document.querySelector("#email");
-let pa = document.querySelector("#password");
-let fm = document.querySelector("form");
-le;
-form.addEventListener("submit", function (deft) {
-  deft.preventDefault();
-  if (nm.value.length <= 2) {
-    document.querySelector("#hide").style.dissplay = "initial";
-  }
-});
+// let nm = document.querySelector("#name");
+// let em = document.querySelector("#email");
+// let pa = document.querySelector("#password");
+// let fm = document.querySelector("form");
+// fm.addEventListener("submit", function (deft) {
+//   deft.preventDefault();
+//   if (nm.value.length <= 2) {
+//     document.querySelector("#hide").style.display = "initial";
+//   } else {
+//     document.querySelector("#hide").style.display = "none";
+//   }
+// });
