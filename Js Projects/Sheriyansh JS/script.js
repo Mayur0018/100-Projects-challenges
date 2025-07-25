@@ -592,3 +592,12 @@
 //     document.querySelector("#hide").style.display = "none";
 //   }
 // });
+
+// function timoutse(){
+// setInterval(()=>{
+//  console.log("Mayur iS The Best Coder");
+// },2000)
+// }
+// timoutse();
+
+localStorage.setItem("name","Mayur is The Best Coder");

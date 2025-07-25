@@ -14,3 +14,8 @@ pahle capture phase chalta fhir bubling pahse chalta hai.
 event capture ka matlab jab hum usse pahse ko on karege tab vo uss hisab se chalehga jo ki bottom to top hoga btn.addEventListner("click",function(){
     console.log("preactice Make U Perfect Man")
 },true);
+settimeOut ekbar chalta hai , setinterval baar baar chalta  hai.
+localStorage  esi chiz browser ke band hone par bhi data store rhega.
+sesions store the browser data temporly.
+cookies bhi data save karta jo ki browser ki cookies name me save hota hai.
+setItems yaha value ko set karta hai
