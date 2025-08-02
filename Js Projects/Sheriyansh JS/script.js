@@ -599,5 +599,4 @@
 // },2000)
 // }
 // timoutse();
-
-localStorage.setItem("name","Mayur is The Best Coder");
+// localStorage.setItem("name","Mayur is The Best Coder");
