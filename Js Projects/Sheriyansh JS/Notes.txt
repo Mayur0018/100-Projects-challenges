@@ -23,6 +23,4 @@ session storage menally use for store the temporly data. or nothing.
 cookie matlab usme jo bhi data add karoge vo page reload hone pe server pe jayega.
 localStorage me arrayvagera store nahi kar sakte isliye usse string bana ke store karte hai jiske liye json.stringyfy ka use hota hai.
 or vahi string ko uske natural form me lane ke liye json.parse() ka use karte hai.
-
-
 namste js :-
