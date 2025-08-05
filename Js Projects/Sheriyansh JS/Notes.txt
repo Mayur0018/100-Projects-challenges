@@ -24,3 +24,4 @@ cookie matlab usme jo bhi data add karoge vo page reload hone pe server pe jayeg
 localStorage me arrayvagera store nahi kar sakte isliye usse string bana ke store karte hai jiske liye json.stringyfy ka use hota hai.
 or vahi string ko uske natural form me lane ke liye json.parse() ka use karte hai.
 namste js :-
+scope chaine means lexical scope ki jo chian hoti hai usse scope chain kaha jata hai.
