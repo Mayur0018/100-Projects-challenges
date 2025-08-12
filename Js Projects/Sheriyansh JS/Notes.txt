@@ -25,3 +25,7 @@ localStorage me arrayvagera store nahi kar sakte isliye usse string bana ke stor
 or vahi string ko uske natural form me lane ke liye json.parse() ka use karte hai.
 namste js :-
 scope chaine means lexical scope ki jo chian hoti hai usse scope chain kaha jata hai.
+jab bhi koi varible hosted hota uske bich ke time ko temporal deadzone kha jata hai.....
+let const reserve their on sparate storage.
+event loop :-
+event queue and event loop event queue mese api resuesr event loop me jati hai fhir vo evnet done hone ke baad event loop call stack me push kar deta hai.
