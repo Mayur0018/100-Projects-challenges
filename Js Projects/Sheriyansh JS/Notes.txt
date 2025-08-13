@@ -29,3 +29,16 @@ jab bhi koi varible hosted hota uske bich ke time ko temporal deadzone kha jata 
 let const reserve their on sparate storage.
 event loop :-
 event queue and event loop event queue mese api resuesr event loop me jati hai fhir vo evnet done hone ke baad event loop call stack me push kar deta hai.
+jab bhi hum api se data fetch karate hai toh vo microtask queue
+microquue is talke function execute first and callback queqe function execute latter..
+all call backeck function go inside the micro task queue.
+call bacek queqe all so known as a task queqe.
+
+BASIC:-
+MAP :- map function is return a new array
+foreach :- filter function donsnt return any new array.foreach me new array nahi deta that changes orginal array..
+array destrucring:- assign the individual variable in single Statement..
+
+take one more funtion as agtuments call higher order funtion..
+call and apply : call me hum string pass kar sakte . in place of applly we pass araay..
+bind we cant invoke imidetaly...
