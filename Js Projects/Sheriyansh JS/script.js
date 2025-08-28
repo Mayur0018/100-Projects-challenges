@@ -600,3 +600,31 @@
 // }
 // timoutse();
 // localStorage.setItem("name","Mayur is The Best Coder");
+// const arrNumber = [10,20,30,40,40];
+// const duplicatarray = arrNumber.filter((elm,index,arr)=> arr.indexOf(elm)!== index);
+// console.log(duplicatarray);
+// const inarray = [10, 20, 30, 40];
+// const largetsvalue = (arr) => {
+//   firstLargestvalue = Math.max(...arr);
+//   index = arr.indexOf(firstLargestvalue);
+//   arr.splice(index, 1);
+//   secondLargestvalue = Math.max(...arr);
+//   return secondLargestvalue;
+// };
+
+// console.log(largetsvalue(inarray));
+// const arrnum = [10, 20, 30, 50, 60, 100];
+// const missnum = [];
+// const maxvaluemum = (arr) => {
+//   const maxvalue = Math.max(...arr);
+//   const minvalue = Math.min(...arr);
+
+//   for (let i = minvalue; i < maxvalue; i++) {
+//     if (arr.indexOf(i) < 0) {
+//        missnum.push(i)
+//     }
+//   }
+//   return missnum;
+// };
+
+// console.log(maxvaluemum(arrnum));
