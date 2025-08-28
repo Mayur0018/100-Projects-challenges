@@ -628,3 +628,13 @@
 // };
 
 // console.log(maxvaluemum(arrnum));
+const inputnum = prompt("Enter The Input Value");
+const fact = 1;
+if (inputnum <= 0) {
+  console.log(`Cant find Factroal of this value ${inputnum}`);
+} else {
+  for (let i = 1; i < inputnum; i++) {
+    fact = fact * i;
+  }
+  console.log(`factorial of ${inputnum} is ${fact}`);
+}
