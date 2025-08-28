@@ -20,3 +20,4 @@ find method ko jab bhi koi first coditions true milegi vvo bas usi ko satisfied 
 slice is use subset off array start inedex to end of inedex.
 concat method is not change original array.
 slice start or end number of array and give en end index not include.
+== loose equality === strick equality.
