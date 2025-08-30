@@ -654,7 +654,7 @@
 //   console.log(result);
 // }
 
-const reverseString=(revstr)=>{
+// const reverseString=(revstr)=>{
 
-}
-reverseString("mayur");
+// }
+// reverseString("mayur");
