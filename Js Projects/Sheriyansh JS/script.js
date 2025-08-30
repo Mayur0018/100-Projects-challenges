@@ -659,7 +659,7 @@
 // }
 // reverseString("mayur");
 
-const string = prompt("Enter Value");
+let string = prompt("Enter Value");
 string = string.toLowerCase();
 
 const palidromefind = (str) => {
@@ -671,4 +671,4 @@ const palidromefind = (str) => {
   }
 };
 
-console.log(palidromefind(str));
+console.log(palidromefind(string));
