@@ -628,13 +628,33 @@
 // };
 
 // console.log(maxvaluemum(arrnum));
-const inputnum = prompt("Enter The Input Value");
-const fact = 1;
-if (inputnum <= 0) {
-  console.log(`Cant find Factroal of this value ${inputnum}`);
-} else {
-  for (let i = 1; i < inputnum; i++) {
-    fact = fact * i;
-  }
-  console.log(`factorial of ${inputnum} is ${fact}`);
+// let inputnum = prompt("Enter The Input Value");
+// let fact = 1;
+// if (inputnum < 0) {
+//   console.log(`Cant find Factroal of this value ${inputnum}`);
+// } else {
+//   for (let i = 1; i < inputnum; i++) {
+//     fact = fact * i;
+//   }
+//   console.log(`factorial of ${inputnum} is ${fact}`);
+// }
+// var number = prompt("Enter Numer");
+// if (number === 1) {
+//   console.log(`${number} is not prime number composite`);
+// } else if (number < 1) {
+//   console.log(`prime number of ${number} is not posible`);
+// } else {
+//   for (let i = 2; i < number; i++) {
+//     if ((number %= i)) {
+//       var result = `${result} is not prime  number`;
+//     } else {
+//       var result = `${result} is  prime  number`;
+//     }
+//   }
+//   console.log(result);
+// }
+
+const reverseString=(revstr)=>{
+
 }
+reverseString("mayur");
