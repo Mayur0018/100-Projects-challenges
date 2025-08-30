@@ -658,3 +658,17 @@
 
 // }
 // reverseString("mayur");
+
+const string = prompt("Enter Value");
+string = string.toLowerCase();
+
+const palidromefind = (str) => {
+  const reverseString = string.split("").reverse().join();
+  if (reverseString === str) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(palidromefind(str));
