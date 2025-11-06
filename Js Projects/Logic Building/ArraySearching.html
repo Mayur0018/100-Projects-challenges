@@ -20,17 +20,16 @@
         "Progress, not perfection. 🚶‍♂️",
       ];
 
-      function findingmesaage(messages,keyword){
-        let result = []
-        for(let searchmessage of messages){
-            if(searchmessage.includes(keyword)){
-              result.push(searchmessage)
-            }
+      function findingmesaage(messages, keyword) {
+        let result = [];
+        for (let searchmessage of messages) {
+          if (searchmessage.includes(keyword)) {
+            result.push(searchmessage);
+          }
         }
-        return result
+        return result;
       }
-      console.log(findingmesaage(chartmessage,"pushing"));
-      
+      console.log(findingmesaage(chartmessage, "pushing"));
     </script>
   </body>
 </html>
