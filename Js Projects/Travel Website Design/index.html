@@ -20,8 +20,7 @@
           <li><a href="#">Travel Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
-        <i class="fa-solid fa-bars"></i>
-
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
       </nav>
       <div class="container">
         <h1>
@@ -209,5 +208,12 @@
         <p>Copyright @ 2025, Mayur</p>
       </div>
     </div>
+    <script>
+      let navbar = document.querySelector(".navbar");
+      function togglebtn() {
+        navbar.classList.toggle("hidemenu");
+        console.log("Mayur is the best coder");
+      }
+    </script>
   </body>
 </html>
