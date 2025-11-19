@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  background-color: aquamarine;
+  border-top: 1px solid #ccc;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  padding: 22px 30px;
+  border-right: 1px solid #ccc;
+}
+.header-address {
+  padding: 20px 30px;
+}
+.header-address h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.header-addressn p {
+  font-size: 14px;
+}
+.search-box {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-grow: 1;
+  border-radius: 15px;
+  border: 1px solid #f4f4f4;
+}
+.search-box input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+}
+.search-box button {
+  border: none;
+  padding: 15px;
+  background: transparent;
+}
+.search-box input:focus {
+  outline: none;
+}
+.header-btn {
+  display: flex;
+  margin: 40px;
+  gap: 40px;
+}
+.header-btn button {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.header-btn button:last-child {
+  background-color: #54b226;
+  color: #f4f4f4;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.bannerSection{
+    max-width: 1280px;
+    margin: auto;
+}
+.bannerSection img{
+    width: 100%;
+}
+.order-banner{
+  display: flex;
+  max-width: 1280px; 
+  margin: auto;
+}
+.order-banner-items {
+  flex-basis: 38%;
+  margin: 1%;
+}
+.order-banner-items img {
+  width: 100%;
+}
+
