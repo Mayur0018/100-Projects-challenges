@@ -68,16 +68,16 @@ header {
   font-weight: bold;
   border-radius: 5px;
 }
-.bannerSection{
-    max-width: 1280px;
-    margin: auto;
+.bannerSection {
+  max-width: 1280px;
+  margin: auto;
 }
-.bannerSection img{
-    width: 100%;
+.bannerSection img {
+  width: 100%;
 }
-.order-banner{
+.order-banner {
   display: flex;
-  max-width: 1280px; 
+  max-width: 1280px;
   margin: auto;
 }
 .order-banner-items {
@@ -88,3 +88,16 @@ header {
   width: 100%;
 }
 
+.categorySection {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoryItems {
+  flex-basis: 12%;
+}
+
+.categoryItems img{
+  width: 100%;
+}
