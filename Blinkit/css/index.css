@@ -4,6 +4,15 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.main{
+  width: 1000px;
+  height: 200px;
+  margin: auto;
+  background-color: red;
+}
+.main1{
+  max-width: 1170px;
+}
 header {
   display: flex;
   background-color: aquamarine;
@@ -95,9 +104,9 @@ header {
   flex-wrap: wrap;
 }
 .categoryItems {
-  flex-basis: 12%;
+  flex-basis: 10%;
 }
 
-.categoryItems img{
+.categoryItems img {
   width: 100%;
 }
