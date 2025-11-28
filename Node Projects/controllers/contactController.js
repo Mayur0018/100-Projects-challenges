@@ -7,6 +7,11 @@ const getContact = (req, res) => {
 };
 
 const CreateContact = (req, res) => {
+  const { name, email, phone } = req.body;
+  if (!name || !email || !phone) {
+    res.status(400);
+    throw new Error("All Fields are mandotory!");
+  }
   res.status(200).json({ mesagge: "Create A Contact" });
 };
 
