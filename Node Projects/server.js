@@ -1,10 +1,10 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
+const contactsRotes = require("./routes/contactRoutes");
 const app = express();
 const port = process.env.PORT || 5000;
-app.get("/api/contacts", (req, res) => {
-  res.status(200).json({mesagge : "Mayur Best Hai Or Rahega"});
-});
+
+app.use("/api/contacts", contactsRotes);
 app.listen(port, () => {
   console.log(`Server  Started On ${port}`);
 });
