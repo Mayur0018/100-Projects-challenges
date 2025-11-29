@@ -1,7 +1,7 @@
 const aysncHandler = require("express-async-handler");
 const contactModel = require("../models/contactModel");
 const getContacts = aysncHandler(async (req, res) => {
-  const contacts = await contactModel.find();
+  const contacts = await contactModel.find({ user_id: req.user.id });
   res.status(200).json(contacts);
 });
 
@@ -25,6 +25,7 @@ const CreateContact = aysncHandler(async (req, res) => {
     name,
     email,
     phone,
+    user_id: req.user.id,
   });
   res.status(200).json(contact);
 });
@@ -34,6 +35,12 @@ const updateContact = aysncHandler(async (req, res) => {
   if (!Contact) {
     res.status(404);
     throw new Error("Contact Not Found");
+  }
+  if (Contact.user_id.toString() !== req.user.id) {
+    res.status(403);
+    throw new Error(
+      "User don't have permisions to update others user contacts"
+    );
   }
   const updateContact = await contactModel.findByIdAndUpdate(
     req.params.id,
@@ -49,10 +56,15 @@ const deleteContact = aysncHandler(async (req, res) => {
     req.status(400);
     throw new Error("Contact Not Found");
   }
+  if (contact.user_id.toString() !== req.user.id) {
+    res.status(403);
+    throw new Error(
+      "User don't have permisions to update others user contacts"
+    );
+  }
   await contactModel.deleteOne();
   res.status(200).json(contact);
 });
-
 
 module.exports = {
   getContacts,

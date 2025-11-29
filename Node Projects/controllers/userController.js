@@ -1,6 +1,7 @@
 const aysncHandler = require("express-async-handler");
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const registerUser = aysncHandler(async (req, res) => {
   const { username, email, password } = req.body;
   if (!username || !email || !password) {
@@ -31,9 +32,31 @@ const registerUser = aysncHandler(async (req, res) => {
 });
 
 const LoginUser = aysncHandler(async (req, res) => {
-  res.json({ message: "Login The User" });
+  const { email, password } = req.body;
+  if (!email || !password) {
+    res.status(400);
+    throw new Error("All Fields Are Mandotroy");
+  }
+  const user = await userModel.findOne({ email });
+  if (user && (await bcrypt.compare(password, user.password))) {
+    const accessToken = jwt.sign(
+      {
+        user: {
+          username: user.username,
+          email: user.email,
+          id: user._id,
+        },
+      },
+      process.env.ACCESS_TOKEN_SECERT,
+      { expiresIn: "15m" }
+    );
+    res.status(200).json({ accessToken });
+  } else {
+    res.status(401);
+    throw new Error("Email or password is not valid");
+  }
 });
 const currentUser = aysncHandler(async (req, res) => {
-  res.json({ message: "Current user information" });
+  res.json(req.user);
 });
 module.exports = { registerUser, LoginUser, currentUser };
