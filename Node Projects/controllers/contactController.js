@@ -54,6 +54,7 @@ const deleteContact = aysncHandler(async (req, res) => {
   res.status(200).json(contact);
 });
 
+
 module.exports = {
   getContacts,
   getContact,
