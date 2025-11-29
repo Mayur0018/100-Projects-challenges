@@ -1,6 +1,5 @@
 const aysncHandler = require("express-async-handler");
 const contactModel = require("../models/contactModel");
-
 const getContacts = aysncHandler(async (req, res) => {
   const contacts = await contactModel.find();
   res.status(200).json(contacts);
