@@ -1,27 +1,36 @@
-const getContacts = (req, res) => {
+const aysncHandler = require("express-async-handler");
+const contactModel = require("../models/contactModel");
+const getContacts = aysncHandler(async (req, res) => {
   res.status(200).json({ mesagge: "Get Contact" });
-};
+});
 
-const getContact = (req, res) => {
-  res.status(200).json({ mesagge: `Get Contact for ${req.params.id}` });
-};
+const getContact = aysncHandler(async (req, res) => {
+  const contacts = await contactModel.find();
+  res.status(200).json(contacts);
+});
 
-const CreateContact = (req, res) => {
+const CreateContact = aysncHandler(async (req, res) => {
   const { name, email, phone } = req.body;
   if (!name || !email || !phone) {
     res.status(400);
     throw new Error("All Fields are mandotory!");
   }
-  res.status(200).json({ mesagge: "Create A Contact" });
-};
+  const contact = await contactModel.create({
+    name,
+    email,
+    phone,
+  });
+  res.status(200).json(contact);
+});
 
-const updateContact = (req, res) => {
+const updateContact = aysncHandler(async (req, res) => {
   res.status(200).json({ mesagge: `Update Contact for ${req.params.id}` });
-};
+});
 
-const deleteContact = (req, res) => {
+const deleteContact = aysncHandler(async (req, res) => {
   res.status(200).json({ mesagge: `Delete Contact for ${req.params.id}` });
-};
+});
+
 module.exports = {
   getContacts,
   getContact,
