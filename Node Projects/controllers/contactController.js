@@ -1,12 +1,15 @@
 const aysncHandler = require("express-async-handler");
 const contactModel = require("../models/contactModel");
+
+
 const getContacts = aysncHandler(async (req, res) => {
-  res.status(200).json({ mesagge: "Get Contact" });
+  const contacts = await contactModel.find();
+  res.status(200).json(contacts);
 });
 
 const getContact = aysncHandler(async (req, res) => {
-  const contacts = await contactModel.find();
-  res.status(200).json(contacts);
+  const contact = await contactModel.findById(req.params.id)
+  res.status(200).json(contact);
 });
 
 const CreateContact = aysncHandler(async (req, res) => {
@@ -15,6 +18,7 @@ const CreateContact = aysncHandler(async (req, res) => {
     res.status(400);
     throw new Error("All Fields are mandotory!");
   }
+
   const contact = await contactModel.create({
     name,
     email,
