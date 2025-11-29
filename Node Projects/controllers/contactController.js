@@ -31,11 +31,27 @@ const CreateContact = aysncHandler(async (req, res) => {
 });
 
 const updateContact = aysncHandler(async (req, res) => {
-  res.status(200).json({ mesagge: `Update Contact for ${req.params.id}` });
+  const Contact = await contactModel.findById(req.params.id);
+  if (!Contact) {
+    res.status(404);
+    throw new Error("Contact Not Found");
+  }
+  const updateContact = await contactModel.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+    { new: true }
+  );
+  res.status(200).json(updateContact);
 });
 
 const deleteContact = aysncHandler(async (req, res) => {
-  res.status(200).json({ mesagge: `Delete Contact for ${req.params.id}` });
+  const contact = await contactModel.findById(req.params.id);
+  if (!contact) {
+    req.status(400);
+    throw new Error("Contact Not Found");
+  }
+  await contactModel.deleteOne();
+  res.status(200).json(contact);
 });
 
 module.exports = {
