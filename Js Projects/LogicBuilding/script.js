@@ -27,30 +27,40 @@ for (let row = 0; row < rows; row++) {
 
 function render() {
   snake.forEach((segment) => {
-    console.log(segment);
-    blocks[`${segment.x}-${segment.y}`].classList.add("fill");
+    const key = segment.x + "-" + segment.y;
+    if (blocks[key]) {
+      blocks[key].classList.add("fill");
+    }
   });
 }
 
-// setInterval(() => {
-//   let head = null;
-//   if (direaction === "left") {
-//     head = { x: snake[0].x, y: snake[0].y - 1 };
-//   } else if (direaction === "right") {
-//     head = { x: snake[0].x, y: snake[0].y + 1 };
-//   } else if (direaction === "down") {
-//     head = { x: snake[0].x + 1, y: snake[0].y };
-//   } else if (direaction === "up") {
-//     head = { x: snake[0].x - 1, y: snake[0].y };
-//   }
+const intervaliId = setInterval(() => {
+  let head = { ...snake[0] };
+  if (direaction === "left") {
+    head = { x: snake[0].x, y: snake[0].y - 1 };
+  } else if (direaction === "right") {
+    head = { x: snake[0].x, y: snake[0].y + 1 };
+  } else if (direaction === "down") {
+    head = { x: snake[0].x + 1, y: snake[0].y };
+  } else if (direaction === "up") {
+    head = { x: snake[0].x - 1, y: snake[0].y };
+  }
 
-//   snake.forEach((segment) => {
-//     blocks[`${segment.x}-${segment.y}`].classList.remove("fill");
-//   });
-//   snake.unshift(head);
-//   snake.pop();
-//   render();
-// }, 400);
+  if (head.x < 0 || head.x >= rows || head.y < 0 || head.y >= cols) {
+    alert("Game Over");
+    clearInterval(intervaliId);
+  }
+  snake.forEach((segment) => {
+    const key = segment.x + "-" + segment.y;
+    if (blocks[key]) {
+      blocks[key].classList.remove("fill");
+    }
+  });
+
+  snake.unshift(head);
+  snake.pop();
+  render();
+}, 300);
 
 // ArrowUp
 // script.js:56 ArrowRight
@@ -63,7 +73,8 @@ addEventListener("keydown", (event) => {
     direaction = "right";
   } else if (event.key == "ArrowDown") {
     direaction = "down";
-  } else if ((event.key = "ArrowLeft")) {
+  } else if (event.key == "ArrowLeft") {
     direaction = "left";
   }
 });
+render();
