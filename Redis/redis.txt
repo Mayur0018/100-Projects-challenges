@@ -4,3 +4,7 @@
 Docker yaha opratiing system ki tarha work karta docker ka use hum oprating system ki tarha karte hai.
 Docker me jo image hota ho oprating sytem hota jo diff container data pe work karta hai iamge like container.
 Dcoker me jo bhi port pe chal raha hoga usko hum map bhi kart docker ke andar ke server ko expose karne ke liye hum server expose kar sakte or apne locally system me use kar sakte hai 
+Docker is Use for alag alg device hamra project same server par run kare..
+
+
+
