@@ -14,9 +14,47 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(uuid())
-  name     String
-  email    String @unique
-  password String
-  createdAt DateTime @default(now())
+  id             String           @id @default(uuid())
+  name           String
+  email          String           @unique
+  password       String
+  createdAt      DateTime         @default(now())
+  movies         Movies[]         @relation("MoviesCreator")
+  watchlistItems WatchlistItem[]
+}
+
+model Movies {
+  id          String   @id @default(uuid())
+  title       String
+  overview    String
+  releaseYear String
+  genres      String[] @default([])
+  runtime     Int?
+  posterUrl   String?
+  createBy    String
+  createAt    DateTime @default(now())
+
+  creator        User            @relation("MoviesCreator", fields: [createBy],references: [id],onDelete: Cascade)
+  watchlistItems WatchlistItem[]
+}
+
+model WatchlistItem {
+  id       String          @id @default(uuid())
+  userId   String
+  movieId  String
+  status   WatchlistStatus @default(PLANNED)
+  rating   Int?
+  notes    String
+  createAt DateTime        @default(now())
+  updateAt DateTime        @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  movie Movies @relation(fields: [movieId], references: [id], onDelete: Cascade)
+}
+
+enum WatchlistStatus {
+  PLANNED
+  WATCHING
+  COMPLETED
+  DROPPED
 }
