@@ -2,13 +2,16 @@ import express from "express";
 import dotenv from "dotenv";
 import movieRouter from "./routes/moviesRoutes.js";
 import { connectDB, disconnectDB } from "./config/db.js";
-
+import authRoutes from "./routes/authRoutes.js"
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.use("/movies", movieRouter);
-
+app.use("/auth",authRoutes);
+app.use("/login",authRoutes)
+app.use("/logout",authRoutes)
 const PORT = process.env.PORT || 5000;
 
 let server;
